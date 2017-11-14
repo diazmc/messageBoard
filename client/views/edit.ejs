@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Edit Animal</h2>
+        <% for(var i = 0; i < animal.length; i++) {%>
+        <form action='/mongooses/<%= animal[i].id %>' method='post'>
+            Name:<input type='text' name='name' value='<%= animal[i].name %>'><br><br>
+            Info:<input type='text' name='info' value='<%= animal[i].info %>'><br><br>
+            <input type='submit' value='Edit'>
+        </form>
+        <% }; %>
+        <a href='/'><button>Go back</button></a>
+    </body>
+</html>

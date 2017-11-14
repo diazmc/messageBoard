@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link type='text/css' rel='stylesheet' href="/info.css">
+    </head>
+
+    <body>
+
+        <% for (var i = 0; i < animal.length; i++) { %>
+        <div class='info'>
+            <ul>
+                <li><%= animal[i].name %>: <%= animal[i].info %></li>  <a href='/mongooses/edit/<%= animal[i].id %>'><button id='edit'>Edit</button></a>
+                <form action='/mongooses/destroy/<%= animal[i].id %>' method='post'>
+                    <input type='submit' value='Delete'>
+                </form>
+            </ul>
+
+
+            <% }; %>
+        </div>
+            
+        <a href='/'><button id='back'>Go Back</button></a>
+    </body>
+</html>
+

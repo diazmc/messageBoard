@@ -1,0 +1,17 @@
+.info {
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 10px 10px 5px grey;
+
+}
+#back {
+    margin-top: 20px;
+}
+
+#edit {
+    
+}
+
+button {
+    vertical-align: top;
+}

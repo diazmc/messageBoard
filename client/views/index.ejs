@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Animals</h2>
+        
+        <% for (var i = 0; i < animals.length; i++) { %>
+        <ul>
+            <li><%= animals[i].name %>
+                <a href='/mongooses/<%= animals[i].id %>'><button>Show Info</button></a>
+            </li>
+        </ul>
+        <% }; %>
+
+        <a href='/mongooses/new'><button>Add an animal</button></a>
+    </body>
+</html>
